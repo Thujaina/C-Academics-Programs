@@ -4,9 +4,9 @@ namespace LineApplication
 {
     class Line
     {
-        private double length;
+        private double length; // Length of a line
 
-        public Line()
+        public Line()  
         {
             Console.WriteLine("Object is being created");
         }
