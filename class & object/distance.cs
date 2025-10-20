@@ -41,9 +41,7 @@ class Program
 
         Console.Write("Enter number of clients: ");
         int n = Convert.ToInt32(Console.ReadLine());
-
-        // Input client details
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) // Input client details
         {
             Console.WriteLine("\nEnter details for client " + (i + 1));
 
