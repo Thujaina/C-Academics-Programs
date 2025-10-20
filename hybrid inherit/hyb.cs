@@ -1,6 +1,6 @@
 using System;
 
-class Person
+class Person //base class
 {
     protected string name;
     protected int age;
@@ -10,7 +10,7 @@ class Person
     }
 }
 
-class Patient : Person
+class Patient : Person //derived class
 {
     protected int patientId;
     protected string disease;
@@ -32,7 +32,7 @@ interface IReport
     void GenerateReport();
 }
 
-class PatientHealth : Patient, IHealthCheck, IReport
+class PatientHealth : Patient, IHealthCheck, IReport //derived class from 2 base classes and interface IHealthCheck
 {
     private double temperature, bpSystolic, bpDiastolic, heartRate;
     private string status = "Normal";
