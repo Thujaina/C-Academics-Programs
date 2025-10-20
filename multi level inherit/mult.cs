@@ -1,6 +1,6 @@
 using System;
 
-class City
+class City //base class
 {
     protected string cityName;
     protected int population;
@@ -11,7 +11,7 @@ class City
     }
 }
 
-class Building : City
+class Building : City //derived class1
 {
     protected string buildingName, buildingType;
     protected int units;
@@ -23,7 +23,7 @@ class Building : City
     }
 }
 
-class Consumption : Building
+class Consumption : Building //derived class2 from derived class1 
 {
     private double usagePerUnit; // kWh
     private double rate; // per kWh
